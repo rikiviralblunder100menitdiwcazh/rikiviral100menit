@@ -1,1 +1,0 @@
-# rikiviral100menit
