@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riki blunder 100 menit di wc</title>
+    <style>
+        /* Default Theme: Blue header, white background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .download-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .download-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+        }
+        .theme-menu {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .theme-options {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .theme-options button {
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .login-form {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-form input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Dark Theme */
+        .dark-theme body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-theme header {
+            background-color: #333;
+        }
+        .dark-theme .container {
+            background-color: #1e1e1e;
+        }
+        /* Red-White Theme */
+        .red-white-theme body {
+            background-color: #ffffff;
+            color: #333;
+        }
+        .red-white-theme header {
+            background-color: #dc3545;
+        }
+        .red-white-theme .container {
+            background-color: #f8f9fa;
+        }
+        /* Green Theme */
+        .green-theme body {
+            background-color: #e8f5e8;
+            color: #333;
+        }
+        .green-theme header {
+            background-color: #28a745;
+        }
+        .green-theme .container {
+            background-color: #d4edda;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>&copy;ABCD &copy;2025</p>
+        <h1>Riki blunder 100 menit di wc</h1>
+    </header>
+
+    <div class="theme-menu" onclick="toggleThemeMenu()">
+        Ubah Tema
+        <div class="theme-options" id="theme-options">
+            <button onclick="changeTheme('default')">Default (Biru-Putih)</button>
+            <button onclick="changeTheme('dark')">Hitam-Putih</button>
+            <button onclick="changeTheme('red-white')">Merah-Putih</button>
+            <button onclick="changeTheme('green')">Hijau</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="download-section">
+            <h2>Download File</h2>
+            <p>Klik tombol di bawah untuk mengunduh file "Riki blunder 100 menit di wc".</p>
+            <button class="download-btn" onclick="showLoginForm()">Download Sekarang</button>
+        </div>
+
+        <div class="login-form" id="login-form">
+            <h3>Login atau Daftar untuk Melanjutkan</h3>
+            <form onsubmit="handleLogin(event)">
+                <input type="text" placeholder="Email atau Nomor Telepon" required>
+                <input type="password" placeholder="Kata Sandi" required>
+                <button type="submit">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleThemeMenu() {
+            const options = document.getElementById('theme-options');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function changeTheme(theme) {
+            document.body.className = theme === 'default' ? '' : theme + '-theme';
+            document.getElementById('theme-options').style.display = 'none';
+        }
+
+        function showLoginForm() {
+            document.getElementById('login-form').style.display = 'block';
+        }
+
+        function handleLogin(event) {
+            event.preventDefault();
+            // Simulate login success and redirect
+            window.location.href = 'https://youtu.be/wcloI-vA8e8?si=6zxsd7jCw95AB-1p';
+        }
+    </script>
+</body>
+</html>
